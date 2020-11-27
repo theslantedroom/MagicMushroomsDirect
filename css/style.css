@@ -56,15 +56,18 @@ header{
 }
 .clickHere{
 	background-color: #3a3a3a;
-	height: 50px;
+	height: 40px;
 	width: 100px;
 	color: white;
 	text-align: center;
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	border-radius: 18px;
+	border-radius: 2px;
 	z-index: 1;
+}
+.clickHere:hover{
+	cursor: pointer;
 }
 #microDosing{
 	display: inline-flex;
@@ -119,4 +122,102 @@ background-image: url("../img/slide2.jpg");
 }
 #fourImages4{
 background-image: url("../img/slide3.jpg");
+}
+
+#products{
+	text-align: left;
+
+}
+#products li{
+	list-style: none;
+	height: 300px;
+    width: 200px;
+    margin-right: 0.5%;
+    background: #fafafa;
+	padding: 5px;
+}
+#products li:hover{
+	cursor:pointer;
+}
+#products h1{
+	text-align: center;
+}
+#products ul{
+	width: 100%;
+	justify-content: center;
+	display: inline-flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+}
+#products div{
+height: 60%;
+width: auto;
+background-repeat: no-repeat;
+background-size: cover;
+background-position: center;
+}
+
+#product1{
+	background-image: url("../img/avery.jpg");
+}
+#product2{
+	background-image: url("../img/slide1.jpg");
+}
+#product3{
+	background-image: url("../img/slide2.jpg");
+}
+#product4{
+	background-image: url("../img/slide4.jpg");
+}
+
+#faq{
+	display: flex;
+	justify-content: center;
+	width: 70%;
+	width: 100%;
+	height: auto;
+}
+#faq div{
+	width: 70%;
+}
+#faq h1{
+	margin-bottom: 50px;
+}
+#faq h6:hover{
+	cursor: pointer;
+}
+
+/*
+#faq1A, #faq2A, #faq3A, #faq4A{
+	background-color: rgba(211, 211, 211, 0.87);
+	overflow: hidden;
+	transition: max-height 0.15s ease-out;
+}*/
+
+
+.faqHide{
+    max-height: 0;
+    transition: max-height 0.15s ease-out;
+    overflow: hidden;
+    background: rgba(165, 165, 165, 0.2);
+}
+.faqShow{
+    max-height: 500px;
+    transition: max-height 0.25s ease-in;
+}
+
+footer{
+	display: inline-flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+	width: 100%;
+	height: auto;
+	height: 100px;
+}
+footer div{
+	display: inline-flex;
+}
+.emailInput{
+	width: 300px;
 }
